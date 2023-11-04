@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Music Player</h1>
+        <input type="file" id="musicFile" accept="audio/*" onchange="loadMusic()">
+        <audio id="musicPlayer" controls></audio>
+        <div id="controls">
+            <button id="playButton" onclick="playMusic()">Play</button>
+            <button id="pauseButton" onclick="pauseMusic()">Pause</button>
+            <input type="range" id="seekBar" value="0" step="1" min="0" oninput="seekMusic()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
